@@ -1,0 +1,27 @@
+﻿<Window x:Class="Krymkovni.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Krymkovni"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid Height="419" VerticalAlignment="Top" HorizontalAlignment="Right" Width="792">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="165*"/>
+                <RowDefinition Height="185*"/>
+                <RowDefinition Height="49*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40*"/>
+                <ColumnDefinition Width="280*"/>
+                <ColumnDefinition Width="71*"/>
+            </Grid.ColumnDefinitions>
+            <Rectangle Fill="#FFF4F4F5" Grid.Row="2" Stroke="Black" Grid.ColumnSpan="3" StrokeThickness="0"/>
+            <Button Content="Назад" HorizontalAlignment="Left" Margin="6,10,0,0" VerticalAlignment="Top" Width="75"/>
+            <Frame  Content="Frame" Source="Pages/AuthPage.xaml" HorizontalAlignment="Left" Height="194" Grid.Row="1" VerticalAlignment="Top" Width="782" Grid.ColumnSpan="3"/>
+        </Grid>
+
+    </Grid>
+</Window>
